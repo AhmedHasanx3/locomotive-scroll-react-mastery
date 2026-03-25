@@ -38,31 +38,38 @@ replacing it with a fluid, continuous path that feels premium on high-refresh-ra
 Initialize the scroll instance within your React lifecycle to ensure clean memory management.
 
 **JavaScript**
-
-// src/hooks/useLocomotive.js
+**src/hooks/useLocomotive.js** 
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 
+/**
+ * useLocomotive Hook
+ * @description Initializes Locomotive Scroll v5 with optimized Lenis options.
+ * @returns {React.MutableRefObject} scrollRef - The scroll instance reference.
+ */
 export const useLocomotive = () => {
-const scrollRef = useRef(null);
+  const scrollRef = useRef(null);
 
-useEffect(() => {
-scrollRef.current = new LocomotiveScroll({
-autoStart: true,
-lenisOptions: {
-lerp: 0.1,
-duration: 1.2,
-smoothWheel: true,
-}
-});
+  useEffect(() => {
+    // Initialize Locomotive Scroll
+    scrollRef.current = new LocomotiveScroll({
+      autoStart: true,
+      lenisOptions: {
+        lerp: 0.1,        // Linear Interpolation (Smoothness)
+        duration: 1.2,    // Scroll duration in seconds
+        smoothWheel: true,
+      }
+    });
 
+    // Cleanup on unmount to prevent memory leaks
     return () => {
-      if (scrollRef.current) scrollRef.current.destroy();
+      if (scrollRef.current) {
+        scrollRef.current.destroy();
+      }
     };
+  }, []);
 
-}, []);
-
-return scrollRef;
+  return scrollRef;
 };
 
 ## 📈 Real-World Results
