@@ -19,12 +19,12 @@
   leading to layout shifts and jagged movement.
   Version 5 changes the game by moving away from heavy scroll listeners.
 
-**Virtual vs. Main Thread Scrolling**
-\*Traditional scrolling relies on the browser's main thread, which can become bottlenecked by complex React renders or heavy JavaScript execution.
+**Virtual vs. Main Thread Scrolling:**
+Traditional scrolling relies on the browser's main thread, which can become bottlenecked by complex React renders or heavy JavaScript execution.
 Locomotive v5 utilizes Virtual Scrolling via the Lenis engine to intercept wheel events and extrapolate motion, ensuring a consistent 60 FPS experience.
 
-**Interpolated Precision**
-\*By using sub-pixel precision rendering, Locomotive eliminates the "pixelated staircase effect" of native scrolling,
+**Interpolated Precision:**
+By using sub-pixel precision rendering, Locomotive eliminates the "pixelated staircase effect" of native scrolling,
 replacing it with a fluid, continuous path that feels premium on high-refresh-rate displays.
 
 ## 🛠 Quick Start
@@ -86,11 +86,11 @@ This architecture isn't just about aesthetics—it's about results. By utilizing
 
 ### 📄 [Download the Ultimate Cheat Sheet PDF](./docs/Locomotive-Scroll-v5-React-Masterclass-Syed-Ahmed.pdf)
 
-A "save-worthy" reference guide including:
+- A "save-worthy" reference guide including:
 
-- **The Attributes Table:** `data-scroll`, `data-scroll-speed`, and offsets.
-- **RTL Optimization:** Best practices for Arabic UI mirroring.
-- **GSAP Proxy Guide:** How to sync ScrollTrigger with Locomotive v5.
+* **The Attributes Table:** `data-scroll`, `data-scroll-speed`, and offsets.
+* **RTL Optimization:** Best practices for Arabic UI mirroring.
+* **GSAP Proxy Guide:** How to sync ScrollTrigger with Locomotive v5.
 
 ## 🔗 Quick Links
 
@@ -100,8 +100,9 @@ A "save-worthy" reference guide including:
 ## 🤝 Contributing & Support
 
 - If this resource helped your project, please Star ⭐ the repo.
-  **Author:** Syed Ahmed Mohi Uddin Hasan
-  **Location:** Al Khobar, KSA
 
-* **LinkedIn:** [Syed Ahmed Mohi Uddin Hasan](https://www.linkedin.com/in/syedahmedhasanx3/)
-* **DEV Community:** [My Technical Articles](https://dev.to/syedahmedx3)
+* **Author:** Syed Ahmed Mohi Uddin Hasan
+* **Location:** Al Khobar, KSA
+
+* [Connet with me on LinkedIn](https://www.linkedin.com/in/syedahmedhasanx3/)
+* [Find me on DEV](https://dev.to/syedahmedx3)
