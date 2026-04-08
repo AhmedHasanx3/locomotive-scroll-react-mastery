@@ -1,5 +1,6 @@
 ## 🚂 Locomotive Scroll v5 x React Mastery
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syedahmedhasanx3/) 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00df9a)](https://syedahmedx3.github.io/Portfolio/)
 ## 🚀 Overview
 
 - Welcome to the Locomotive Scroll x React Mastery repository. This project is a curated technical guide designed for developers building premium, cinematic web experiences in the modern ecosystem.
