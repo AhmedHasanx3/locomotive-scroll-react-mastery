@@ -10,6 +10,9 @@ export const useLocomotive = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
+    // Safety guard for Server-Side Rendering (SSR) environments
+    if (typeof window === "undefined") return;
+
     // Initialize Locomotive Scroll v5 (Lenis-based core)
     scrollRef.current = new LocomotiveScroll({
       autoStart: true,
@@ -22,7 +25,7 @@ export const useLocomotive = () => {
 
     // Cleanup on unmount to prevent memory leaks
     return () => {
-      if (scrollRef.current) {
+      if (scrollRef.current && typeof scrollRef.current.destroy === "function") {
         scrollRef.current.destroy();
       }
     };
